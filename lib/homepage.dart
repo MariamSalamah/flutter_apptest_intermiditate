@@ -121,7 +121,7 @@ class _HomePageState extends State<HomePage> {
                 width: MediaQuery.of(context).size.width,
                 child: ListView.builder(
                     padding: const EdgeInsets.only(
-                        left: 20, right: 20, top: 40, bottom: 80),
+                        left: 20, right: 200, top: 40, bottom: 80),
                     scrollDirection: Axis.horizontal,
                     itemCount: 3,
                     itemBuilder: (context, index) {
@@ -137,7 +137,7 @@ class _HomePageState extends State<HomePage> {
           Container(
             margin: const EdgeInsets.only(top: 8.0),
             child: RulerWidget(
-              scaleSize: 350,
+              scaleSize: 250,
               scaleColor: Colors.grey[900],
               indicatorWidget: Column(
                 children: <Widget>[
@@ -153,12 +153,9 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
 
-          SizedBox(
-            height: 400,
-          ),
 
           Padding(
-            padding: const EdgeInsets.only(bottom: 20 , top: 20),
+            padding: const EdgeInsets.only(bottom: 20 , top: 50),
             child: InkWell(
               onTap: (){},
               child: Container(
